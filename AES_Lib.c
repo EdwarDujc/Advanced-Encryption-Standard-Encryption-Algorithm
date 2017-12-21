@@ -1,6 +1,6 @@
 /*C*****************************************************************************
 * NAME:         AES_Lib.c
-* AES(Advanced Encryption Standard) Encryption Algorithm
+* AES(Advanced  Encryption Standard) Encryption Algorithm
 * NOTES:        128 bytes encryption
 *******************************************************************************/
 
@@ -280,7 +280,7 @@ AES_U8 tmp;
 *-------------------------------------------------------------------------------
 * PURPOSE:  use field addition and multiplication results to replace the 
 *           original values
-*           includes S-box convert£¬row convert£¬column convert
+*           includes S-box convertÂ£, row convert, column convert
 *			encryption
 *-------------------------------------------------------------------------------
 * EXAMPLE:
@@ -325,13 +325,13 @@ AES_U8 newstate[4 * Nc];
 *
 * RETURN:   None
 *-------------------------------------------------------------------------------
-* PURPOSE:  includes inverse S-box convert£¬inverse row convert, and inverse
+* PURPOSE:  includes inverse S-box convertÂ£Â¬inverse row convert, and inverse
 *           column convert
 *           encryption			
 *-------------------------------------------------------------------------------
 * EXAMPLE:
 *-------------------------------------------------------------------------------
-* NOTE:     same as MixSubColumns£¬c(x)='0B'x^3+'0D'x^2+'09'x+'0E'
+* NOTE:     same as MixSubColumns, c(x)='0B'x^3+'0D'x^2+'09'x+'0E'
 *******************************************************************************/
 static void InvMixSubColumns(AES_U8 *state)
 {
@@ -400,7 +400,7 @@ AES_U16 idx;    //index
 *-------------------------------------------------------------------------------
 * EXAMPLE:
 *-------------------------------------------------------------------------------
-* NOTE:     used in both encryption and decryption£¬expand Nk bytes in each round
+* NOTE:     used in both encryption and decryption, expand Nk bytes in each round
 *******************************************************************************/
 void AES_ExpandKey(AES_U8 *key, AES_U8 *expKey)
 {

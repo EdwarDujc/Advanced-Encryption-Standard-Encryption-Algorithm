@@ -1,12 +1,12 @@
 /*C*****************************************************************************
 * NAME:         main.c
-* AES(Advanced Encryption Standard)Encryption Algorithm 
-* NOTES:        Running Mode£ºCBC (Ciphertext Block Chaining)
-*				plaintext£º128000 bits
-*				ciphertext£º128000 bits
-* File:			plaintext.txt		
-*				ciphertext.txt	
-*				decry.txt	
+* AES(Advanced 	Encryption Standard)Encryption Algorithm 
+* NOTES:        Running ModeÂ£: CBC (Ciphertext Block Chaining)
+*		plaintextÂ£: 128000 bits
+*		ciphertextÂ£: 128000 bits
+* File:		plaintext.txt		
+*		ciphertext.txt	
+*		decry.txt	
 *******************************************************************************/
 
 #include <stdio.h>
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 	srand((unsigned)time(NULL));	
 	for(j=0;j<=15;j++)				//array random initialization
 		C[0][j]=rand()%256;			
-	for(i=0;i<1000;i++)				//loop 1000 times£¬generate 128 bits plaintext each time£¬encrypt in CBC mode
+	for(i=0;i<1000;i++)				//loop 1000 timesÂ£Â¬generate 128 bits plaintext each timeÂ£Â¬encrypt in CBC mode
 	{
 		for(j=0;j<=15;j++)
 		{
@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
 		fprintf( fc,"\n");
 	}
 	
-	for(i=0;i<1000;i++)				//loop 1000 times£¬read ciphertext in array C[][]£¬decrypt in CBC mode
+	for(i=0;i<1000;i++)				//loop 1000 timesÂ£Â¬read ciphertext in array C[][]Â£Â¬decrypt in CBC mode
 	{
 		AES_Decrypt (C[i], expKey, Mr[i]);
 		for(j=0;j<=15;j++)
